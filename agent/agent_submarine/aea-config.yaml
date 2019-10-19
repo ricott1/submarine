@@ -1,11 +1,9 @@
 aea_version: 0.1.10
 agent_name: agent_submarine
-authors: 'Talia Kimber, Maxime Gagnebin, Alessandro Ricottoni'
+authors: 'Talia Kimber, Maxime Gagnebin, Alessandro Ricottone'
 connections:
 - local
-- oef
-- stub
-default_connection: oef
+default_connection: local
 description: ''
 license: ''
 logging_config:
@@ -15,12 +13,6 @@ private_key_paths:
 - private_key_path:
     ledger: default
     path: default_private_key.pem
-- private_key_path:
-    ledger: fetchai
-    path: fet_private_key.txt
-- private_key_path:
-    ledger: ethereum
-    path: eth_private_key.txt
 protocols:
 - default
 registry_path: ../packages
