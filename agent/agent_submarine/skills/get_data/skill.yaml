@@ -1,0 +1,26 @@
+name: get_data
+authors: Fetch.AI Limited
+version: 0.1.0
+license: Apache 2.0
+description: "The get_data skill get data from the OCEAN API."
+url: ""
+behaviours:
+  - behaviour:
+      class_name: GetDataBehaviour
+      args:
+        foo: bar
+handlers:
+  - handler:
+      class_name: GetDataHandler
+      args:
+        foo: bar
+        bar: foo
+tasks:
+  - task:
+      class_name: GetDataTask
+      args:
+        foo: bar
+        bar: foo
+shared_classes: []
+protocols: ["default"]
+dependencies: []
