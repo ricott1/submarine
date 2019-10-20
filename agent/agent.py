@@ -39,7 +39,8 @@ def main_loop():
             
             requestAddress = event_args["queryContract"]
             command = event_args["command"]
-            oceanDid = event_args["oceanDid"]
+            testOceanDid = did:op:6e95e193d86b4bf4a9bda802e5dd10a3f0caa55597524bd18f1e69b26d652acf
+            #oceanDid = event_args["oceanDid"]
             response = create_ocean_request({"command" : command, "did" : oceanDid})
             result = process_response(response)
             signed_txn = create_result_tx()
